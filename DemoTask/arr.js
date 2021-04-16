@@ -1,43 +1,69 @@
+import image from './src/common/helper/Images'
+
 const Data = [
     {
         id: '4',
-        url: 'https://www.flaticon.com/svg/vstatic/svg/711/711284.svg?token=exp=1618491677~hmac=9acb8c631ae13805992880f0404d1e2f',
+        url: image.list,
         title: 'Dev',
+        dis: 'Online Courses from Top Institutions - Gain New Skills & Earn a Certificate of Completion. Enrol',
+        price: '100',
+        star: "4.5"
     },
     {
         id: '1',
-        url: 'https://www.flaticon.com/svg/vstatic/svg/4389/4389640.svg?token=exp=1618491779~hmac=3be29fd2464b66fe3ea38350dad81310',
+        url: image.list1,
         title: 'Games',
+        dis: 'Online Courses from Top Institutions - Gain New Skills & Earn a Certificate of Completion. Enrol',
+        price: '100',
+        star: "4.5"
     }
     , {
         id: '2',
-        url: 'https://www.flaticon.com/svg/vstatic/svg/3850/3850133.svg?token=exp=1618492094~hmac=06b6c430b8837ddd6233bb449c98b84d',
+        url: image.list2,
         title: 'Mining',
+        dis: 'Online Courses from Top Institutions - Gain New Skills & Earn a Certificate of Completion. Enrol',
+        price: '100',
+        star: "4.5"
     }
     , {
         id: '3',
-        url: 'https://www.flaticon.com/svg/vstatic/svg/876/876817.svg?token=exp=1618492181~hmac=1c458f5deef2db12b8a4c6d189181bde',
+        url: image.list3,
         title: 'Music',
+        dis: 'Online Courses from Top Institutions - Gain New Skills & Earn a Certificate of Completion. Enrol',
+        price: '100',
+        star: "4.5"
     },
     {
         id: '4',
-        url: 'https://www.flaticon.com/svg/vstatic/svg/711/711284.svg?token=exp=1618491677~hmac=9acb8c631ae13805992880f0404d1e2f',
+        url: image.list,
         title: 'Dev',
+        dis: 'Online Courses from Top Institutions - Gain New Skills & Earn a Certificate of Completion. Enrol',
+        price: '100',
+        star: "4.5"
     },
     {
         id: '1',
-        url: 'https://www.flaticon.com/svg/vstatic/svg/4389/4389640.svg?token=exp=1618491779~hmac=3be29fd2464b66fe3ea38350dad81310',
+        url: image.list1,
         title: 'Games',
+        dis: 'Online Courses from Top Institutions - Gain New Skills & Earn a Certificate of Completion. Enrol',
+        price: '100',
+        star: "4.5"
     }
     , {
         id: '2',
-        url: 'https://www.flaticon.com/svg/vstatic/svg/3850/3850133.svg?token=exp=1618492094~hmac=06b6c430b8837ddd6233bb449c98b84d',
+        url: image.list2,
         title: 'Mining',
+        dis: 'Online Courses from Top Institutions - Gain New Skills & Earn a Certificate of Completion. Enrol',
+        price: '100',
+        star: "4.5"
     }
     , {
         id: '3',
-        url: 'https://www.flaticon.com/svg/vstatic/svg/876/876817.svg?token=exp=1618492181~hmac=1c458f5deef2db12b8a4c6d189181bde',
+        url: image.list3,
         title: 'Music',
+        dis: 'Online Courses from Top Institutions - Gain New Skills & Earn a Certificate of Completion. Enrol',
+        price: '100',
+        star: "4.5"
     }
 ]
 export default Data;

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import Splash from '../screens/splash/index';
 import Home from '../screens/home/index';
+import Courses from '../screens/courses/index';
 import Profile from '../screens/profile/index';
 import News from '../screens/search/index';
 import { View, Text, SafeAreaView, Image, Pressable, Platform, DeviceEventEmitter } from 'react-native';
@@ -11,13 +12,14 @@ import image from '../common/helper/Images'
 import Program from '../screens/star/index';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import Detail from '../screens/detail/index';
 
 const BottomTab = createBottomTabNavigator();
 
 const MyTabs = () => {
 
     return (
-        <View style={{ flex: 1 }}>
+        // <View style={{ flex: 1 }}>
             <BottomTab.Navigator initialRouteName='Home'
 
                 screenOptions={({ route }) => ({
@@ -42,10 +44,10 @@ const MyTabs = () => {
                     },
                 })}
                 tabBarOptions={{
-                    activeTintColor: 'tomato',
-                    inactiveTintColor: 'gray',
-                    style: { height: hp('12%'), justifyContent: 'center', alignItems: 'center',backgroundColor: 'rgba(245, 245, 245, 0.1)' },
-                    labelStyle: { fontSize: 12 },
+                    // activeTintColor: 'tomato',
+                    // inactiveTintColor: 'gray',
+                    style: { height: hp('12%'), justifyContent: 'center', alignItems: 'center' },
+                    // labelStyle: { fontSize: 12 },
                 }}
             >
                 <BottomTab.Screen name="star" options={{ tabBarLabel: '' }} component={Program} />
@@ -53,7 +55,7 @@ const MyTabs = () => {
                 <BottomTab.Screen name="search" options={{ tabBarLabel: '' }} component={News} />
                 <BottomTab.Screen name="profile" options={{ tabBarLabel: '' }} component={Profile} />
             </BottomTab.Navigator>
-        </View>
+        // </View>
 
     );
 }
@@ -75,7 +77,9 @@ class AppNavigator extends React.Component {
             <View style={styles.info}>
                 <Stack.Navigator screenOptions={{}} initialRouteName={'splash'}>
                     <Stack.Screen name='splash' component={Splash} options={{ title: 'Splash', headerShown: false, }} />
-                    <Stack.Screen name='tabs' component={MyTabs} options={{ title: 'All Tasks', headerShown: false, headerStyle: { backgroundColor: Color.backgroundColor }, headerTitleStyle: { color: Color.WHITE } }} />
+                    <Stack.Screen name='tabs' component={MyTabs} options={{ title: '', headerShown: false, headerStyle: { backgroundColor: Color.backgroundColor }, headerTitleStyle: { color: Color.WHITE } }} />
+                    <Stack.Screen name='courses' component={Courses} options={{ title: 'Design Courses', headerShown: true, headerStyle: { backgroundColor: Color.WHITE }, headerTitleStyle: { color: Color.black } }} />
+                    <Stack.Screen name='detail' component={Detail} options={{ title: 'Courses Detail', headerShown: true, headerStyle: { backgroundColor: Color.WHITE }, headerTitleStyle: { color: Color.black } }} />
                     {/* <Stack.Screen name='news' component={Add} options={{ title: 'Add your Task', headerShown: true, headerTitleStyle: { color: Color.WHITE }, headerStyle: { backgroundColor: Color.backgroundColor, }, headerBackTitleStyle: { color: Color.WHITE }, headerTintColor: Color.WHITE }} /> */}
                 </Stack.Navigator>
             </View>

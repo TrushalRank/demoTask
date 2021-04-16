@@ -51,14 +51,12 @@ export default (styles = {
     shadowRadius: 5,
     shadowOpacity: 1.0,
     height: hp('12%'),
-    width: wp('75%'),
-    margin: wp('1%'),
-    elevation: 5, marginHorizontal: wp('2.5%'),
+    elevation: 5, marginHorizontal: wp('5%'),
     marginVertical: hp('1%'),
-    
+
   },
   semiviewsec: {
-    width: wp('30%'),
+    backgroundColor: 'tomato', width: wp('30%'),
     borderTopLeftRadius: 10, borderBottomLeftRadius: 10
   },
   semisemisec: {
@@ -68,38 +66,23 @@ export default (styles = {
   },
   undersemi: {
     width: '100%',
-    marginTop: hp('2%'),
+    marginTop: hp('2%'),marginHorizontal:wp('4.5%'),marginTop:wp('-0.5%'),
     flexDirection: 'row', alignItems: 'center'
   },
   undermain: {
-    width: '50%',
+    width: '20%',
     justifyContent: 'center', alignItems: 'center',
     padding: wp('0.8%'), borderRadius: 5,
     backgroundColor: 'tomato'
   },
-  secimg: { width: wp('3%'), height: wp('3%'), tintColor: 'gold' },
+  secimg:{width: wp('3%'), height: wp('3%'), tintColor: 'gold'},
   textfirst: { fontSize: Constants.SMALL, fontFamily: Constants.FONT_REGULAR },
   sectext: { fontSize: Constants.NORMAL, fontFamily: Constants.FONT_REGULAR },
-  startext: { fontSize: Constants.SMALL, fontFamily: Constants.FONT_REGULAR, marginLeft: wp('3.5%') },
-  pricetext: { fontSize: Constants.SMALL, fontFamily: Constants.FONT_REGULAR },
+  startext: { fontSize: Constants.SMALL, fontFamily: Constants.FONT_REGULAR,marginLeft:wp('3.5%') },
+  pricetext: { fontSize: Constants.SMALL, fontFamily: Constants.FONT_REGULAR }  ,
   cattext: { fontSize: Constants.NORMAL, fontFamily: Constants.FONT_REGULAR },
   seeall: { fontSize: Constants.NORMAL, fontFamily: Constants.FONT_REGULAR, color: 'tomato' },
-  devtext: { fontSize: Constants.NORMAL, fontFamily: Constants.FONT_REGULAR },
-
-  modalview: {
-    borderRadius: 5,
-    shadowColor: 'silver',
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowRadius: 5,
-    shadowOpacity: 1.0,
-    elevation: 5,
-    width: wp('100%'),
-    backgroundColor: 'white'
-  },
-  textinput: { width: '80%', height: hp('5%'), borderRadius: 10, borderWidth: 1, borderColor: 'silver' }
+  devtext: { fontSize: Constants.LARGE, fontFamily: Constants.FONT_MEDIUM,marginVertical:wp('3.5%'),marginHorizontal: hp('2%'), }
 
 });
 module.exports = styles;
