@@ -8,7 +8,7 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 import Arr from '../../../arr'
 import { Color, Constants } from '../../common/styles';
 
-export default class login extends React.Component {
+export default class Profile extends React.Component {
 
     constructor() {
         super()
