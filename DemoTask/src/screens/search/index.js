@@ -7,7 +7,7 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 import { Input, ButtonSet } from '../../components/index'
 import { Constants } from '../../common/styles';
 
-export default class Splash extends React.Component {
+export default class Search extends React.Component {
 
     constructor() {
         super()

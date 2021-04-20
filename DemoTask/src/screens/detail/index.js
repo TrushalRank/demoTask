@@ -11,7 +11,7 @@ import { Constants } from '../../common/styles';
 
 const { auth, Firebase } = FireBaseSetup();
 
-export default class login extends React.Component {
+export default class Details extends React.Component {
 
     constructor() {
         super()

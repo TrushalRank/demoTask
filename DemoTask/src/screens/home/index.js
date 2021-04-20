@@ -22,7 +22,7 @@ const imagearr = [
 ];
 
 
-export default class login extends React.Component {
+export default class Home extends React.Component {
 
     constructor() {
         super()

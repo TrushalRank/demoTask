@@ -10,7 +10,7 @@ import FireBaseSetup from '../../components/Firebase'
 
 const { auth, Firebase } = FireBaseSetup();
 
-export default class login extends React.Component {
+export default class Courses extends React.Component {
 
     constructor() {
         super()
